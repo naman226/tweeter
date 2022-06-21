@@ -23,3 +23,6 @@ textarea {
 .heading {
   font-family: "Source Sans Pro", sans-serif;
 }
+.negative {
+  color: red;
+}
