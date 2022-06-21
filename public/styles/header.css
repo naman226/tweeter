@@ -1,0 +1,25 @@
+.header {
+  height: 450px;
+  width: 100%;
+  background-color: chocolate;
+  background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
+
+}
+
+.profile-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 120px;
+}
+
+.item-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+  top: 75px;
+
+}
