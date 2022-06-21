@@ -1,0 +1,25 @@
+.submission {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Bungee";
+}
+
+.button {
+  background-color: #4056a1;
+  color: #fff;
+}
+
+textarea {
+  width: 100%;
+  height: 60px;
+  background-color: transparent;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 4px solid black;
+  outline: none;
+}
+
+.heading {
+  font-family: "Source Sans Pro", sans-serif;
+}
