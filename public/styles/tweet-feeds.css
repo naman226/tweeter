@@ -1,0 +1,53 @@
+.foot {
+  display: flex;
+  justify-content: space-between;
+  border-top: 4px solid black;
+  align-items: center;
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.key {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+ 
+}
+.key .fa-solid {
+  color: #4056a1;
+}
+.key .fa-solid:hover {
+  color:chocolate;
+}
+.tweet-display {
+  width: 100%;
+  background-color: transparent;
+  border: 4px solid black;
+  outline: black;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: inherit;
+  padding: 1%;
+}
+.avatar-name {
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+.avatar-pic {
+  display: flex;
+  height: 40px;
+  width: auto;
+}
+.summary {
+  padding: 1%;
+}

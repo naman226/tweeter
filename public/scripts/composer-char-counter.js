@@ -7,7 +7,11 @@ $(document).ready(function () {
         $("#count").css("color", "black");
       }
       if (event.keyCode === 8) { //Keycode 8 for backspace
-        return parseInt(value) + 1;
+        if (value >= 140) {
+          return 140;
+        } else {
+          return parseInt(value) + 1;
+        }
       }
       return value - 1;
     });

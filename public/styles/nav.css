@@ -20,8 +20,11 @@ nav {
   margin-right: 1.5em;
 }
 
-.fa-solid {
+.arrow {
   display: flex;
   justify-content: center;
+  color: red;
+}
+.fa-solid {
   color: red;
 }
