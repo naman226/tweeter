@@ -63,4 +63,9 @@ const createTweetElement = function(data) {
 
 $(document).ready(function() {
   renderTweets(tweetData);
+  $('form').submit((event) => {
+    event.preventDefault();
+    const data = $("textarea").serialize();
+    $.post("/tweets", data);
+  });
 });
