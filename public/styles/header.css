@@ -1,17 +1,17 @@
 .header {
-  height: 450px;
+  height: 400px;
   width: 100%;
   background-color: chocolate;
   background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
-
+  
 }
 
 .profile-image {
   display: flex;
+  flex-direction:inherit;
   align-items: center;
   justify-content: center;
-  position: relative;
-  top: 120px;
+  margin-top: 120px;
 }
 
 .item-name {
@@ -19,8 +19,5 @@
   align-items: center;
   justify-content: center;
   color: #fff;
-  position: relative;
-  top: 75px;
   font-family: sans-serif;
-
 }
