@@ -1,0 +1,22 @@
+#error-first {
+  color: #D8000C;
+  font-weight: bolder;
+  background-image: url(https://i.imgur.com/GnyDvKN.png);
+  background-repeat: no-repeat;
+  padding-left: 50px;
+  padding-bottom: 10px; ;
+  display: none;
+}
+
+#error-second {
+  color: #D8000C;
+  font-weight: bolder;
+  background-image: url(https://i.imgur.com/GnyDvKN.png);
+  background-repeat: no-repeat;
+  padding-left: 50px;
+  padding-bottom: 10px; ;
+  display: none;
+}
+
+  
+

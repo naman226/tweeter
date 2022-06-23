@@ -42,10 +42,11 @@ $(document).ready(function() {
     const data = $("textarea").serialize();
     let message = $('textarea').val();
     if (!message) {
-      $("#error-first").css("display", "grid");
+      $("#error-first").slideDown("slow").css("display", "grid");
     } else if (message.length > 140) {
-      $("#error-second").css("display", "grid");
+      $("#error-second").slideDown("slow").css("display", "grid");
     } else {
+      $(".error").css("display", "none");
       $.post("/tweets", data, () => {
         $.get("/tweets", (tweet) => {
           const newTweet = tweet[tweet.length - 1];
