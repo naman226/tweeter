@@ -1,14 +1,14 @@
 
-$(document).ready(function () {
-  const renderTweets = function (data) {
+$(document).ready(function() {
+  const renderTweets = function(data) {
     data.forEach(element => {
       const tweet = createTweetElement(element);
       $("#tweet-holder").prepend(tweet);
     });
   };
 
-  const createTweetElement = function (data) {
-    const escape = function (str) {
+  const createTweetElement = function(data) {
+    const escape = function(str) {
       let div = document.createElement("div");
       div.appendChild(document.createTextNode(str));
       return div.innerHTML;
@@ -42,9 +42,9 @@ $(document).ready(function () {
     const data = $("textarea").serialize();
     let message = $('textarea').val();
     if (!message) {
-      alert("Tweet Empty");
+      $("#error-first").css("display", "grid");
     } else if (message.length > 140) {
-      alert("Tweet too long");
+      $("#error-second").css("display", "grid");
     } else {
       $.post("/tweets", data, () => {
         $.get("/tweets", (tweet) => {
