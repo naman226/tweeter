@@ -8,6 +8,7 @@ nav {
   color: #FFFFFF;
   position: fixed;
   top: 0;
+  padding: 5px;
 }
 
 .logo {
@@ -27,4 +28,19 @@ nav {
 }
 .fa-solid {
   color: red;
+}
+
+.arrow i.fa-solid {
+  animation: bounce2 1s ease infinite forwards;
+}
+@keyframes bounce2 {
+  0% {
+    transform: translateY(-0.2rem);
+  }
+  50% {
+    transform: translateY(0.2rem);
+  }
+  100% {
+    transform: translateY(-0.2rem);
+  }
 }
