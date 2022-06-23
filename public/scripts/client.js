@@ -1,13 +1,13 @@
 
-$(document).ready(function() {
-  const renderTweets = function(data) {
+$(document).ready(function () {
+  const renderTweets = function (data) {
     data.forEach(element => {
       const tweet = createTweetElement(element);
-      $("#tweet-holder").append(tweet);
+      $("#tweet-holder").prepend(tweet);
     });
   };
 
-  const createTweetElement = function(data) {
+  const createTweetElement = function (data) {
     const tweet =
       `<article class="tweet-display">
     <header class="head">
@@ -32,11 +32,22 @@ $(document).ready(function() {
     return tweet;
   };
 
-
   $('form').submit((event) => {
     event.preventDefault();
     const data = $("textarea").serialize();
-    $.post("/tweets", data);
+    let message = $('textarea').val();
+    if (!message) {
+      alert("Tweet Empty");
+    } else if (message.length > 140) {
+      alert("Tweet too long");
+    } else {
+      $.post("/tweets", data, () => {
+        $.get("/tweets", (tweet) => {
+          const newTweet = tweet[tweet.length - 1];
+          $("#tweet-holder").prepend(createTweetElement(newTweet));
+        });
+      });
+    }
   });
   const loadTweets = function() {
     $.get("/tweets", (data) => {
