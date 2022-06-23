@@ -8,6 +8,11 @@ $(document).ready(function () {
   };
 
   const createTweetElement = function (data) {
+    const escape = function (str) {
+      let div = document.createElement("div");
+      div.appendChild(document.createTextNode(str));
+      return div.innerHTML;
+    };
     const tweet =
       `<article class="tweet-display">
     <header class="head">
@@ -19,7 +24,7 @@ $(document).ready(function () {
       </div>
       <div class="username">${data.user.handle}</div>
     </header>
-    <p class="summary">${data.content.text}</p>
+    <p class="summary">${escape(data.content.text)}</p>
     <footer class="foot">
       <p>${timeago.format(data.created_at)}</p>
       <div class="key">
@@ -45,6 +50,7 @@ $(document).ready(function () {
         $.get("/tweets", (tweet) => {
           const newTweet = tweet[tweet.length - 1];
           $("#tweet-holder").prepend(createTweetElement(newTweet));
+          $("#tweet-text").val('');
         });
       });
     }
