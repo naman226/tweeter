@@ -8,7 +8,7 @@ $(document).ready(function() {
   };
 
   const createTweetElement = function(data) {
-    const escape = function(str) { //Adds security encoding to user input 
+    const escape = function(str) {//Adds security encoding to user input 
       let div = document.createElement("div");
       div.appendChild(document.createTextNode(str));
       return div.innerHTML;

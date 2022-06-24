@@ -4,9 +4,9 @@ Tweeter is a single-page AJAX-based Twitter clone that uses JQuery, HTML 5 and p
 
 ## Final Product Snap Shots
 ### Home page of desktop resolution that allows user to post new tweets.
-!["Home page of desktop resolution that allows user to post new tweets."]()
+!["Home page of desktop resolution that allows user to post new tweets."](https://github.com/naman226/tweeter/blob/master/Docs/desktop.png?raw=true)
 ### Responsive design home page for tablets and mobile phones.
-!["Responsive design home page for tablets and mobile phones"]()
+!["Responsive design home page for tablets and mobile phones"](https://github.com/naman226/tweeter/blob/master/Docs/phone.png?raw=true)
 
 ## Dependencies
 
@@ -23,7 +23,7 @@ Tweeter is a single-page AJAX-based Twitter clone that uses JQuery, HTML 5 and p
 - Run the development web server using the `node index.js` command.
 - As the server is up and running user will see `Tweeter listening on port (PORT)!` printed on the console.
 - Home page will be displayed where users can input new tweets.
-- Tweets should not be empty and within the alloted word limit to be posted successfully.
+- Tweets should not be empty and within the allotted word limit to be posted successfully.
 
 ## License
 
