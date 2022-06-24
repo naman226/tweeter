@@ -17,14 +17,14 @@ html {
  * Global layout stuff
  */
 
-  body {
-    display: flex;
-    color: #545149;
-    margin-top: 161px;
-    background-color: #f4f1ec;
-    font-size: 24px;
-    font-family: "Source Sans Pro", sans-serif;
-  }
+body {
+  display: flex;
+  color: #545149;
+  margin-top: 161px;
+  background-color: #f4f1ec;
+  font-size: 24px;
+  font-family: "Source Sans Pro", sans-serif;
+}
 
 main {
   margin-right: 2em;
@@ -36,11 +36,11 @@ main {
  @media only screen and (min-width: 300px) and (max-width: 850px) { 
   
   body {
-  display: block;
-  color: #545149;
-  background-color: #f4f1ec;
-  font-size: 24px;
-  font-family: "Source Sans Pro", sans-serif; 
+    display: block;
+    color: #545149;
+    background-color: #f4f1ec;
+    font-size: 24px;
+    font-family: "Source Sans Pro", sans-serif; 
   }
 
 }

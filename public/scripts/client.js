@@ -8,7 +8,7 @@ $(document).ready(function() {
   };
 
   const createTweetElement = function(data) {
-    const escape = function(str) {
+    const escape = function(str) { //Adds security encoding to user input 
       let div = document.createElement("div");
       div.appendChild(document.createTextNode(str));
       return div.innerHTML;
@@ -57,7 +57,8 @@ $(document).ready(function() {
       });
     }
   });
-  const loadTweets = function() {
+
+  const loadTweets = function() { //Load tweet database
     $.get("/tweets", (data) => {
       renderTweets(data);
     });
