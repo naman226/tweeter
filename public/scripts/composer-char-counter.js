@@ -1,5 +1,5 @@
-$(document).ready(function () {
-  $("#tweet-text").on('input', function (event) {
+$(document).ready(function() {
+  $("#tweet-text").on('input', function() {
     let $input = $(this);
     let length = $input.val().length;
     let charsRemaining = 140 - length;
