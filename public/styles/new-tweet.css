@@ -19,11 +19,16 @@ textarea {
   border-right: 0;
   border-bottom: 4px solid black;
   outline: none;
+  overflow-wrap: break-word;
 }
 
 .heading {
   font-family: "Source Sans Pro", sans-serif;
 }
 .negative {
+  color: red;
+}
+
+.red {
   color: red;
 }

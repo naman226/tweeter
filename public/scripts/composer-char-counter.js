@@ -1,20 +1,18 @@
 $(document).ready(function () {
-  $("#tweet-text").keyup(function (event) {
-    $("#count").val(function (index, value) {
-      if (value < 0) {
-        $("#count").css("color", "red");
-      } else {
-        $("#count").css("color", "black");
-      }
-      if (event.keyCode === 8) { //Keycode 8 for backspace
-        if (value >= 140) {
-          return 140;
-        } else {
-          return parseInt(value) + 1;
-        }
-      }
-      return value - 1;
-    });
+  $("#tweet-text").on('input', function (event) {
+    let $input = $(this);
+    let length = $input.val().length;
+    let charsRemaining = 140 - length;
+    const $form = $input.closest('form');
+    const $counter = $form.find('#count');
+    $counter.html(charsRemaining);
+
+    if (charsRemaining < 0) {
+      $counter.addClass('red');
+      return;
+    }
+    $counter.removeClass('red');
   });
 });
+
 
