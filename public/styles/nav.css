@@ -44,3 +44,18 @@ nav {
     transform: translateY(-0.2rem);
   }
 }
+@media only screen and (min-width: 300px) and (max-width: 850px) {
+
+  nav {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    background-color: chocolate;
+    background-image: url(https://www.transparenttextures.com/patterns/black-orchid.png);
+  }
+}

@@ -52,6 +52,7 @@ $(document).ready(function() {
           const newTweet = tweet[tweet.length - 1];
           $("#tweet-holder").prepend(createTweetElement(newTweet));
           $("#tweet-text").val('');
+          $("#count").val(140);
         });
       });
     }
